@@ -1,21 +1,24 @@
 {
   "name": "@uxndigital/eslint-config-react",
-  "version": "8.0.0",
+  "version": "9.0.0",
   "author": "UXN Digital",
   "dependencies": {
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6"
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19"
   },
   "license": "MIT",
   "main": "index.js",
   "publishConfig": {
     "access": "public",
-    "tag": "v8"
+    "tag": "v9"
   },
   "private": false,
-  "repository": "uxndigital/eslint-config-react",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxndigital/eslint-config-react.git"
+  },
   "peerDependencies": {
-    "eslint": "8.x.x"
+    "eslint": "9.x.x"
   }
 }
