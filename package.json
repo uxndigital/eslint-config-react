@@ -1,0 +1,21 @@
+{
+  "name": "@uxndigital/eslint-config-react",
+  "version": "8.0.0",
+  "author": "UXN Digital",
+  "dependencies": {
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "tag": "v8"
+  },
+  "private": false,
+  "repository": "uxndigital/eslint-config-react",
+  "peerDependencies": {
+    "eslint": "8.x.x"
+  }
+}
