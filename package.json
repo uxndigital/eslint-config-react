@@ -14,7 +14,10 @@
     "tag": "v8"
   },
   "private": false,
-  "repository": "uxndigital/eslint-config-react",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxndigital/eslint-config-react.git"
+  },
   "peerDependencies": {
     "eslint": "8.x.x"
   }
