@@ -2,13 +2,33 @@
   "name": "@uxndigital/eslint-config-react",
   "version": "9.0.0",
   "author": "UXN Digital",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
   "dependencies": {
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19"
   },
+  "devDependencies": {
+    "eslint": "9.x.x",
+    "typescript": "^5.8.3"
+  },
   "license": "MIT",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public",
     "tag": "v9"
