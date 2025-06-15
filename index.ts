@@ -33,4 +33,8 @@ const reactConfig: Linter.Config = {
   }
 };
 
-export default [reactConfig];
+const configs: Linter.Config[] = [
+  reactConfig
+];
+
+export default configs;
