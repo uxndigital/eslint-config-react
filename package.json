@@ -1,7 +1,8 @@
 {
   "name": "@uxndigital/eslint-config-react",
-  "version": "9.0.0",
+  "version": "9.0.2",
   "author": "UXN Digital",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
@@ -9,7 +10,8 @@
   "dependencies": {
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19"
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0"
   },
   "devDependencies": {
     "eslint": "9.x.x",

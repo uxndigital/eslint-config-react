@@ -2,6 +2,7 @@ import type { Linter } from 'eslint';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
 
 const reactConfig: Linter.Config = {
   files: ['**/*.{jsx,tsx}'],
@@ -25,7 +26,7 @@ const reactConfig: Linter.Config = {
   rules: {
     'react/prop-types': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true }
@@ -34,6 +35,15 @@ const reactConfig: Linter.Config = {
 };
 
 const configs: Linter.Config[] = [
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        React: 'readonly',
+        JSX: 'readonly'
+      }
+    }
+  },
   reactConfig
 ];
 
