@@ -5,7 +5,6 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import globals from 'globals';
 
 const reactConfig: Linter.Config = {
-  files: ['**/*.{jsx,tsx}'],
   plugins: {
     react: reactPlugin,
     'react-hooks': reactHooksPlugin,
