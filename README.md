@@ -10,12 +10,14 @@ npm install --save-dev @uxndigital/eslint-config-react eslint@9.x.x
 
 ## Usage
 
-Add the following to your `.eslintrc.js` or `.eslintrc.json`:
+Add the following to your `eslint.config.js`:
 
-```json
-{
-  "extends": "@uxndigital/eslint-config-react"
-}
+```js
+import reactConfig from '@uxndigital/eslint-config-react';
+
+export default [
+  ...reactConfig
+]
 ```
 
 ## Peer Dependencies
